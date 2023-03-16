@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="header">
+      <h1 class="visually-hidden">Теплый пол в каждый дом</h1>
       <div class="container header__container">
         <img
           class="header__logo"
@@ -17,15 +18,138 @@
           width="162"
           height="39"
         />
-        <button class="header__btn">Заказать</button>
+        <button class="button button_white">Заказать</button>
       </div>
     </header>
 
     <main>
-      <section></section>
+      <section class="hero section-offset">
+        <div class="container hero_container">
+          <div class="hero__content gray-block">
+            <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
+            <p class="hero_description">
+              Устанавливаем теплые полы в&nbsp;квартирах, офисах
+              и&nbsp;загородных домах.
+            </p>
+            <a href="#calc" class="button hero__link"
+              >Рассчитать&nbsp;стоимость</a
+            >
+          </div>
+          <div class="hero__slider-wrapper">
+            <div class="filling">
+              <div class="filling">
+                <div
+                  class="filling hero__image"
+                  style="background-image: url('./image/hero1.jpg')"
+                ></div>
+              </div>
+              <div class="btn hero__slider-btn hero__slider-btn_prev"></div>
+              <div class="btn hero__slider-btn hero__slider-btn_next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="adventges section-offset">
+        <div class="container adventges__container">
+          <h2 class="adventges__title">Наши преимущества</h2>
+          <ul class="adventges__list">
+            <li class="adventges__item">Надежные материалы</li>
+            <li class="adventges__item">опытные монтажники</li>
+            <li class="adventges__item">Регулируемая температура пола</li>
+            <li class="adventges__item">Защита от замыканий</li>
+            <li class="adventges__item">Гарантия до 10 лет</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="calc section-offset" id="calc">
+        <div class="container calc__container gray-block">
+          <div class="calc__content gray-block">
+            <h2 class="calc__title">Рассчитайте стоимость</h2>
+
+            <form class="calc__form">
+              <fieldset class="calc__fieldset calc__fieldset_size">
+                <label class="calc__wrapper-input calc__wrapper-input_size">
+                  <span class="calc__text">Ширина помещения, м</span>
+                  <input
+                    type="text"
+                    class="calc__input-size"
+                    type="number"
+                    name="width"
+                    required
+                  />
+                </label>
+
+                <label class="calc__wrapper-input calc__wrapper-input_size">
+                  <span class="calc__text">Длина помещения, м</span>
+                  <input
+                    type="text"
+                    class="calc__input-size"
+                    type="number"
+                    name="length"
+                    required
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset class="calc__fieldset calc__fieldset_tariff">
+                <legend class="calc__text calc__text_legend">Тариф</legend>
+                <label class="calc__wrapper-input calc__wrapper-input_tariff">
+                  <input
+                    class="calc__input-radio"
+                    type="radio"
+                    name="tariff"
+                    value="economy"
+                  />
+                  <span class="calc__text-radio">Эконом</span>
+                </label>
+
+                <label class="calc__wrapper-input calc__wrapper-input_tariff">
+                  <input
+                    class="calc__input-radio"
+                    type="radio"
+                    name="tariff"
+                    value="comfort"
+                    checked
+                  />
+                  <span class="calc__text-radio">Комфорт</span>
+                </label>
+
+                <label class="calc__wrapper-input calc__wrapper-input_tariff">
+                  <input
+                    class="calc__input-radio"
+                    type="radio"
+                    name="tariff"
+                    value="premium"
+                  />
+                  <span class="calc__text-radio">Премиум</span>
+                </label>
+              </fieldset>
+
+              <button class="button calc__submit" type="submit">
+                Рассчитать
+              </button>
+            </form>
+          </div>
+
+          <div class="calc__total">
+            <div class="calc__result-wrapper">
+              <p class="calc__result">
+                <span class="calc__text">Площадь</span>
+                <span class="calc__result-text">35 кв м</span>
+              </p>
+              <p class="calc__result">
+                <span class="calc__text">Примерная стоимость</span>
+                <span class="calc__result-text">42590 руб</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section-offset">
       <div class="container footer__container">
         <img
           class="footer__logo"

@@ -8,19 +8,23 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
   color: #232020;
+  background-color: #fff;
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -34,9 +38,37 @@ ul {
 button {
   display: block;
   background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
 }
 
 .container {
   max-width: 1190px;
   margin: 0 auto;
+}
+
+.section-offset {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.filling {
+  width: 100%;
+  height: 100%;
+}
+
+.gray-block {
+  background-color: #f8f8f8;
+  border-radius: 12px;
 }
